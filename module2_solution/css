@@ -1,1 +1,64 @@
-  body{background-color: green}
+  h1{text-align:center;
+     color:black}
+  body{align:right;
+      }
+  #box1,#box2,#box3{
+      float: left;
+      background-color: grey ;
+      /*padding: 10px;*/
+      border: 1px solid black;
+      width: 33%;
+      height: 12em;
+      margin: 20px;
+      box-sizing: border-box;
+      /*overflow: auto;*/
+      position: relative;
+      }
+  .item1,.item2,.item3{
+        float:right;
+        text-align: center;
+        background-color: red;
+        padding: 10px;
+        border: 1px solid black;
+        width: 9rem;
+        /*height: rem;*/
+        margin-top: 0;
+        margin-right: 0;
+        box-sizing: border-box;
+        overflow: auto;
+        /*clear: both;*/
+        }
+        .item2{background-color: lightgreen}
+        .item3{background-color: yellow}
+    #description
+      {
+        clear:right;
+        padding: 5px;
+      }
+      /****Desktop**/
+    @media (min-width: 992px)
+    {
+        #box1,#box2,#box3 {
+        width: 30%;
+      }
+    }
+
+    /********** tablet **********/
+    @media (min-width: 768px) and (max-width: 991px)
+    {
+        #box1,#box2
+        {
+        width: 45%;
+                }
+        #box3
+        {
+          width:95%;
+        }
+    }
+
+    @media (max-width: 767px)
+    {
+        #box1,#box2,#box3 {
+        width: 95%;
+      }
+    }
